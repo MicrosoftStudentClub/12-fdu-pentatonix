@@ -17,9 +17,9 @@ naive.py	用给予naive Bayes的方法生成音乐
 
 ### 数据获取与处理
 
-​	我们使用了GitHub上mid格式的诺丁汉民歌进行音乐生成的项目（数据来源：https://github.com/jukedeck/nottingham-dataset ），我们选取了其中melody中的长度合适的1000首歌曲，按4:1划分成训练数据集和测试数据集进行实验。
+​	我们使用了GitHub上mid格式的诺丁汉民歌进行音乐生成的项目（数据来源：https://github.com/jukedeck/nottingham-dataset ），并选取了其中melody中的长度合适的1000首歌曲，按4:1划分成训练数据集和测试数据集进行实验。
 
-###算法实现
+### 算法实现
 
 1. 利用mido作为接口，从mid文件中导出每个音轨，并记录下来音轨中每个音符的音调和时长。
 2. 记录连续音符二元组的频数，并转化成每个音符后续音符的频率分布表，用于下一步的实验。
